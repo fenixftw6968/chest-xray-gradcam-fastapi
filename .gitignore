@@ -1,0 +1,36 @@
+# Python / Virtual Environment
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+
+# Node / Frontend
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment & Config
+.env
+.env.local
+.env.*.local
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large weights (keep model directory structure but ignore large binaries if needed)
+*.h5
+*.keras
+!backend/models/.gitkeep

@@ -1,0 +1,13 @@
+{
+  "target_size": [
+    224,
+    224
+  ],
+  "class_names": [
+    "NORMAL",
+    "PNEUMONIA"
+  ],
+  "architecture": "MobileNetV2",
+  "threshold": 0.5,
+  "last_conv_layer_name": "Conv_1"
+}

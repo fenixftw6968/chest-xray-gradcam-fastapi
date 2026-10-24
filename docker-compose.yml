@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: xray-backend
+    restart: always
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: "http://52.66.252.58:8000"
+    container_name: xray-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
